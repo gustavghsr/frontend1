@@ -69,6 +69,10 @@ h1{
         flex-grow: 1;            /*permitir aumentar o tamanho*/
         flex-shrink: 1;         /*permitir reduzir o tamanho*/
     }
+    a{
+        text-decoration: none;       /*tirar o sublinhado*/
+        color: #000;
+    }
 
 }
 .card{
