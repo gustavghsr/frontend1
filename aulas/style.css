@@ -1,0 +1,135 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*é uma formatação universal e aplica-se a todas as tags*/
+*{
+    margin: 0;   /*margem externa*/
+    padding: 0; /*margem interna*/
+}
+/* regra */
+body{
+              /* propiedade: valor */
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-family: 'poppins', sans-serif;
+}
+
+header{
+    background-color: #0e365f;     /*cor de fundo*/
+    text-align: center;             /*centraliza um texto*/
+    margin: 0px 0px 0px 0px;       /*top right bottom left*/
+    padding: 20px 0px 20px 0px;   /*top right bottom left*/
+}
+
+footer{
+    background-color: #f1f1f1;
+    padding: 30px; 
+    text-align: center;
+    color: 777;
+}
+
+/* formatação da home */
+
+main{
+    width: 1200px;                  /*fixa a largura*/
+    margin:0px auto 0px auto;      /*centraliza o container (elemento de bloco)*/
+    padding: 40px 0px 40px 0px;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+/* o ponto indica que o (destaque) é uma classe e nao uma tag */
+.destaque{
+    text-align: center;
+    p{                        /*css nesting (alinhamento de css)*/
+            color: #444;   /*cor da letra*/
+    font-size: 1.2rem;      /*tamanho da letra*/
+    line-height: 150%;     /*altura da linha ou espaçamento entre linha*/
+    }
+}
+
+h1{ 
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;       /*carga com valores de 100 a 900 se a font permitir*/
+    /*font-style: italic;    fonte itálico*/
+} 
+
+.grid-home{
+    display: flex;            /*flexbox*/
+    flex-wrap: wrap;         /*permitir a quebra de linha dos elementos */
+    gap: 25px;
+    *{
+        flex-basis: 250px;        /*tamanho inicial para o elemento filho*/
+        flex-grow: 1;            /*permitir aumentar o tamanho*/
+        flex-shrink: 1;         /*permitir reduzir o tamanho*/
+    }
+
+}
+.card{
+     /*aplicar sobra*/
+    /*0: deslocamento horizontal , 3px:vertical, 10px: desfoque, rgba:cor*/
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;   /*margem interna inferior*/
+    border-radius: 10px;   /*cantos arredondados*/
+    text-align: center;
+    img{
+        width: 100%;            /*fixa a largura proporcional*/
+        object-fit: cover;     /*imagem se ajusta ao container com proporção original*/
+        height: 160px;        /*altura original da imagem*/
+    }
+
+    h3{
+        color: #6a3bc8;
+        margin: 15px 0 8px 0;
+    }
+
+    p{
+        font-size: 0,90rem;
+        padding: 0px 10px;
+    }
+}
+.card:hover{
+    transform: translatey(-5px);   /*modifica a aparência visual do elemento*/
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    a{
+        background-color: #ccc;
+        padding: 10px 15px;                /*10px top e bottom, 15 left e right*/
+        text-decoration: none;             /*tira o sublinhado do link*/
+        color: #fff;
+        border-radius: 8px;                /*arredondador de cantos*/
+    }
+
+    a:hover{
+        transform: translateY(-2px);
+    }
+
+    /*o nth-child seleciona elementos filhos de uma tag usada em grupo*/
+    a:nth-child(1){
+        background-color: #3b5998;    /*cor para o facebook*/
+    }
+    a:nth-child(2){
+        background-color: #ff0000;    /*cor para o youtube*/
+    }
+    a:nth-child(3){                    /*cor para o instagram*/
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    }
+    a:nth-child(4){
+        background-color: #25d366;    /*cor para o whatsapp*/
+    }
+    a:nth-child(5){                      /*cor para o tiktok*/
+        background-color: #000;
+    }
+
+}
