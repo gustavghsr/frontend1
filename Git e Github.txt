@@ -28,7 +28,7 @@ Renomeia o branch atual para "main"
 git branch -M main
 
 Adiciona um repositório remoto (no GitHub) chamado "origin" com o URL especificado.
-git remote add origin https://github.com/luisribeiro1/frontend.git
+git remote add origin https://github.com/gustavghsr/frontend1.git
 
 Envia os commits locais para o repositório remoto (origin) no branch main, e configura o tracking para futuros pushes.
 git push -u origin main
@@ -38,15 +38,19 @@ git push -u origin main
 ATUALIZAÇÕES:
 
 git add .
-git commit -m "Aula 14/05/2025: Conteúdo da aula"
+git commit -m "Aula 14/05/2025: Inclusão dos links na home e formação no CSS"
 git push
 
 
 PARA USAR EM OUTRO COMPUTADOR:
 
-git clone https://github.com/luisribeiro1/frontend.git
+#clona a estrtura do repositorio
+git clone https://github.com/gustavghsr/frontend1.git
+
+#puxar os conteudos do repositorio 
 git pull origin main
-Seguir os passos descritos em Atualizações.
+
+#Seguir os passos descritos em Atualizações.
 
 
 
