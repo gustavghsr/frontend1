@@ -181,5 +181,23 @@ h1{
         line-height: 150%;      /*altura da linha*/
         margin-bottom: 15px;    /*margem inferior*/
     }
+    ul,ol{
+        padding-left: 20px;
+        list-style: square;
+        li{
+            line-height: 170%;
+        }
+    }
 
+}
+
+.grid-especialidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    *{
+        flex-basis: 350px;        
+        flex-grow: 1;            
+        flex-shrink: 1;         
+    }
 }
